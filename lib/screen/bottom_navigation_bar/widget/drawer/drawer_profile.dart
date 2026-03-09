@@ -104,6 +104,7 @@ class DrawerIcon extends StatelessWidget {
             ),
             SizedBox(width: 20),
             Text(name, style: TextStyle(color: yellow, fontSize: 20)),
+            
           ],
         ),
         SizedBox(height: 10),
