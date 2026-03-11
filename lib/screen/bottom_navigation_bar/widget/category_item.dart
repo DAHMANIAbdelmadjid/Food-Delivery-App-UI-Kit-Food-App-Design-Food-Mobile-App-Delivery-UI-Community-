@@ -4,8 +4,8 @@ import 'package:project_6/core/conestate.dart';
 
 class CategoryItem extends StatelessWidget {
   final CategoryModel category;
-
-  const CategoryItem({super.key, required this.category});
+  final bool color;
+  CategoryItem({super.key, required this.category, this.color = false});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class CategoryItem extends StatelessWidget {
           height: 62,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(24),
-            color: yellow,
+            color: color ? yellow2 : yellow,
           ),
           child: Padding(
             padding: const EdgeInsets.all(8.0),

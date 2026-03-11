@@ -1,9 +1,9 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:project_6/core/conestate.dart';
 import 'package:project_6/router/router.dart';
 import 'package:project_6/screen/search/search_drinks.dart';
+import 'package:project_6/screen/search/search_snacks.dart';
 
 main() => runApp(MyApp());
 
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp
-    // .router
+    .router
     (
       theme: ThemeData(
         useMaterial3: true,
@@ -27,8 +27,7 @@ class MyApp extends StatelessWidget {
           onError: fontColorSacandry,
         ),
       ),
-      // routerConfig: goRouter,
-      home:SearchDrinks(),
+      routerConfig: goRouter,
     );
   }
 }
